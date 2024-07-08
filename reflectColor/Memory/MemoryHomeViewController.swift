@@ -11,6 +11,7 @@ import FSCalendar
 class MemoryHomeViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSource, FSCalendarDelegateAppearance {
     
     @IBOutlet var calendar: FSCalendar!
+    @IBOutlet var button: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()

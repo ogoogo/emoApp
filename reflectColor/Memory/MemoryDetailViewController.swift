@@ -8,22 +8,43 @@
 import UIKit
 
 class MemoryDetailViewController: UIViewController {
-
+    
+    @IBOutlet var background: UILabel!
+    @IBOutlet var eachBackgrounds: [UILabel]!
+    @IBOutlet var button: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        setupBackgrounds()
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    
+    func setupBackgrounds() {
+        eachBackgrounds.forEach { label in
+            label.layer.cornerRadius = 10
+            label.clipsToBounds = true
+        }
+        
+        background.layer.cornerRadius = 10
+        background.layer.borderColor = UIColor(red: 25/255, green: 44/255, blue: 112/255, alpha: 1.0).cgColor
+        background.layer.borderWidth = 2.0
+        background.clipsToBounds = true
     }
-    */
-
+    
+    
+    
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
