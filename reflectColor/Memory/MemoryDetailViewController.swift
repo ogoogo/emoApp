@@ -7,12 +7,15 @@
 
 import UIKit
 
-class MemoryDetailViewController: UIViewController {
+class MemoryDetailViewController: UIViewController, MemoryMoreDetailViewControllerDelegate {
+    func didUpdateMemoryDetails() {
+        
+    }
+    
     
     @IBOutlet var background: UILabel!
     @IBOutlet var eachBackgrounds: [UILabel]!
     @IBOutlet var button: UIButton!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,8 +23,6 @@ class MemoryDetailViewController: UIViewController {
         setupBackgrounds()
         // Do any additional setup after loading the view.
     }
-    
-    
     
     func setupBackgrounds() {
         eachBackgrounds.forEach { label in
@@ -35,16 +36,22 @@ class MemoryDetailViewController: UIViewController {
         background.clipsToBounds = true
     }
     
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
+    @IBAction func showHalfModal() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "HalfModal")
+        guard let modalVC = vc as? MemoryMoreDetailViewController else { return }
+        modalVC.delegate = self
+
+        // Configure for half modal presentation
+        if let sheet = modalVC.sheetPresentationController {
+            sheet.detents = [.medium()]
+            sheet.prefersGrabberVisible = true
+            sheet.prefersScrollingExpandsWhenScrolledToEdge = false
+        } else {
+            modalVC.modalPresentationStyle = .pageSheet
+        }
+        
+        self.present(modalVC, animated: true)
+    }
+
 }

@@ -1,15 +1,13 @@
 //
-//  RecordStartViewController.swift
+//  HalfModalViewController.swift
 //  reflectColor
 //
-//  Created by 森杏菜 on 2024/06/23.
+//  Created by 森杏菜 on 2024/07/09.
 //
 
 import UIKit
 
-class RecordStartViewController: UIViewController {
-   
-    
+class HalfModalViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +15,7 @@ class RecordStartViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+
     /*
     // MARK: - Navigation
 
@@ -26,5 +25,5 @@ class RecordStartViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-//hey
+
 }

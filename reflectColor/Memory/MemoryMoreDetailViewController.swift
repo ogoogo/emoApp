@@ -7,8 +7,14 @@
 
 import UIKit
 
+protocol MemoryMoreDetailViewControllerDelegate: AnyObject {
+    func didUpdateMemoryDetails()
+}
+
 class MemoryMoreDetailViewController: UIViewController {
+    
     @IBOutlet var label: UILabel!
+    weak var delegate: MemoryMoreDetailViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
