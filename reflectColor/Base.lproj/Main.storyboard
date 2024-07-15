@@ -395,7 +395,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="showHalfModal" destination="Wux-OT-BA5" eventType="touchUpInside" id="apk-IY-5YN"/>
-                                    <segue destination="37P-4T-7Ur" kind="presentation" id="kpP-N4-3d0"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3v-jn-bAn">
@@ -433,6 +432,7 @@
                         <outletCollection property="eachBackgrounds" destination="t3v-jn-bAn" collectionClass="NSMutableArray" id="ZZR-qD-qYB"/>
                         <outletCollection property="eachBackgrounds" destination="FFs-LZ-z21" collectionClass="NSMutableArray" id="hej-NG-Zct"/>
                         <outletCollection property="eachBackgrounds" destination="fB0-dL-h16" collectionClass="NSMutableArray" id="ePJ-tE-ZDh"/>
+                        <segue destination="37P-4T-7Ur" kind="show" id="Wvj-eV-jBU"/>
                     </connections>
                 </viewController>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XEo-UY-Pwk">
@@ -516,14 +516,14 @@
                 </label>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rY5-ce-GvT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6550.3816793893129" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="6555" y="4"/>
         </scene>
         <!--Memory More Detail View Controller-->
         <scene sceneID="FNd-cU-wNf">
             <objects>
                 <viewController storyboardIdentifier="HalfModal" id="37P-4T-7Ur" customClass="MemoryMoreDetailViewController" customModule="reflectColor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jX8-Wd-YmH">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TsB-Ui-BZo">
@@ -546,6 +546,7 @@
                         <viewLayoutGuide key="safeArea" id="gmq-Us-ob6"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <navigationItem key="navigationItem" id="am9-MA-opX"/>
                     <connections>
                         <outlet property="label" destination="TsB-Ui-BZo" id="fLf-mc-513"/>
                     </connections>
