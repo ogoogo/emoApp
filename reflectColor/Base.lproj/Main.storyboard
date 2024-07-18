@@ -297,7 +297,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Pp-f7-OF7" customClass="FSCalendar">
-                                <rect key="frame" x="0.0" y="249" width="393" height="355"/>
+                                <rect key="frame" x="16" y="256" width="361" height="339"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -581,10 +581,10 @@
             </objects>
             <point key="canvasLocation" x="5623.6641221374048" y="695.77464788732402"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Custom Tab Bar Controller-->
         <scene sceneID="dgI-Tv-4Zf">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Qac-7b-G35" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Qac-7b-G35" customClass="CustomTabBarController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nPU-Hb-ALx">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
