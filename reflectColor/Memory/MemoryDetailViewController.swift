@@ -8,10 +8,6 @@
 import UIKit
 
 class MemoryDetailViewController: UIViewController, MemoryMoreDetailViewControllerDelegate {
-    func didUpdateMemoryDetails() {
-        
-    }
-    
     
     @IBOutlet var background: UILabel!
     @IBOutlet var eachBackgrounds: [UILabel]!
@@ -19,9 +15,7 @@ class MemoryDetailViewController: UIViewController, MemoryMoreDetailViewControll
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setupBackgrounds()
-        // Do any additional setup after loading the view.
     }
     
     func setupBackgrounds() {
@@ -38,11 +32,10 @@ class MemoryDetailViewController: UIViewController, MemoryMoreDetailViewControll
     
     @IBAction func showHalfModal() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(identifier: "HalfModal")
+        let vc = storyboard.instantiateViewController(withIdentifier: "HalfModal")
         guard let modalVC = vc as? MemoryMoreDetailViewController else { return }
         modalVC.delegate = self
 
-        // Configure for half modal presentation
         if let sheet = modalVC.sheetPresentationController {
             sheet.detents = [.medium()]
             sheet.prefersGrabberVisible = true
@@ -51,7 +44,14 @@ class MemoryDetailViewController: UIViewController, MemoryMoreDetailViewControll
             modalVC.modalPresentationStyle = .pageSheet
         }
         
+        modalVC.view.layer.cornerRadius = 50
+        modalVC.view.layer.masksToBounds = true
+        
         self.present(modalVC, animated: true)
     }
 
+    func didUpdateMemoryDetails() {
+        // メモリの詳細が更新されたときの処理をここに追加
+        print("Memory details updated")
+    }
 }

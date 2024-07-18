@@ -548,7 +548,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="am9-MA-opX"/>
                     <connections>
-                        <outlet property="label" destination="TsB-Ui-BZo" id="fLf-mc-513"/>
+                        <outlet property="label" destination="TsB-Ui-BZo" id="93Z-kF-JIK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AtV-NL-70W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
