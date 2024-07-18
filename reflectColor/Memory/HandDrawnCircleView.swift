@@ -20,8 +20,9 @@ class HandDrawnCircleView: UIView {
         let center = CGPoint(x: rect.width / 2, y: rect.height / 2)
         let radius: CGFloat = min(rect.width, rect.height) / 4
         
-        // カスタムカラー #999999
-        let customColor = UIColor(red: 153 / 255.0, green: 153 / 255.0, blue: 153 / 255.0, alpha: 1.0)
+     
+        let customColor = UIColor(red: 99 / 255.0, green: 125 / 255.0, blue: 215 / 255.0, alpha: 1.0)
+
 
         
         context.setStrokeColor(customColor.cgColor)

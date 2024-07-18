@@ -302,12 +302,23 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufM-eh-Pkt">
-                                <rect key="frame" x="150" y="672" width="75" height="35"/>
+                                <rect key="frame" x="165" y="152" width="75" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
                                     <segue destination="Wux-OT-BA5" kind="show" id="w5s-k5-EwH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="02z-ad-Fqi">
+                                <rect key="frame" x="136" y="704" width="120" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="リセット">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="resetButtonTapped:" destination="pZV-Sh-ySs" eventType="touchUpInside" id="BP9-Ya-sAz"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -316,8 +327,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="6fM-IL-Nhg"/>
                     <connections>
-                        <outlet property="button" destination="ufM-eh-Pkt" id="zpE-XX-U4d"/>
                         <outlet property="calendar" destination="8Pp-f7-OF7" id="7aV-x9-Qf3"/>
+                        <outlet property="resetButton" destination="02z-ad-Fqi" id="1ql-iT-XLY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HXy-3Y-3o6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

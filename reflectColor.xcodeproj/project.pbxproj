@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4D3D94BF2C48B58B006857B3 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 4D3D94BE2C48B58B006857B3 /* Realm */; };
-		4D3D94C12C48B58B006857B3 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4D3D94C02C48B58B006857B3 /* RealmSwift */; };
 		4D5096762C1ED7B100F5367B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5096752C1ED7B100F5367B /* AppDelegate.swift */; };
 		4D5096782C1ED7B100F5367B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5096772C1ED7B100F5367B /* SceneDelegate.swift */; };
 		4D50967A2C1ED7B100F5367B /* ReflectHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5096792C1ED7B100F5367B /* ReflectHomeViewController.swift */; };
@@ -58,8 +56,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D3D94C12C48B58B006857B3 /* RealmSwift in Frameworks */,
-				4D3D94BF2C48B58B006857B3 /* Realm in Frameworks */,
 				4DBAD02A2C28206100B4FDF1 /* FSCalendar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -168,8 +164,6 @@
 			name = reflectColor;
 			packageProductDependencies = (
 				4DBAD0292C28206100B4FDF1 /* FSCalendar */,
-				4D3D94BE2C48B58B006857B3 /* Realm */,
-				4D3D94C02C48B58B006857B3 /* RealmSwift */,
 			);
 			productName = reflectColor;
 			productReference = 4D5096722C1ED7B100F5367B /* reflectColor.app */;
@@ -487,16 +481,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		4D3D94BE2C48B58B006857B3 /* Realm */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4D3D94BD2C48B58B006857B3 /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = Realm;
-		};
-		4D3D94C02C48B58B006857B3 /* RealmSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4D3D94BD2C48B58B006857B3 /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = RealmSwift;
-		};
 		4DBAD0292C28206100B4FDF1 /* FSCalendar */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4DBAD0282C28206100B4FDF1 /* XCRemoteSwiftPackageReference "FSCalendar" */;
