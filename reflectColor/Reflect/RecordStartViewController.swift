@@ -18,7 +18,7 @@ class RecordStartViewController: UIViewController, AVAudioRecorderDelegate{
     var retryCount = 0
     let maxRetryCount = 3
     var exampleURL: URL!
-    @IBOutlet var nextButton: UIButton!
+    @IBOutlet var nextButton: UIBarButtonItem!
     @IBOutlet var eachBackgrounds: [UILabel]!
     @IBOutlet var answerBackgound: UILabel!
     

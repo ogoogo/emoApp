@@ -21,6 +21,11 @@ class ReflectHomeViewController: UIViewController {
 //        wave.startAnimation()
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func pushButton() {
+        self.performSegue(withIdentifier: "toRecordView", sender: nil)
+    }
+    
 
 
 }

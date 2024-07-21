@@ -25,5 +25,9 @@
 			</array>
 		</dict>
 	</dict>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>このアプリは音声を録音するためにマイクを使用します</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>音声認識を使用します</string>
 </dict>
 </plist>
