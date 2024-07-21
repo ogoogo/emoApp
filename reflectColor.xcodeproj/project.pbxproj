@@ -10,13 +10,24 @@
 		4D3D95412C4CA5B7006857B3 /* RealmSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3D95402C4CA5B7006857B3 /* RealmSwift.swift */; };
 		4D3D95432C4CA5DD006857B3 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4D3D95422C4CA5DD006857B3 /* RealmSwift */; };
 		4D3D95442C4CA5DD006857B3 /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 4D3D95422C4CA5DD006857B3 /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		4D3D954A2C4CAA7A006857B3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4D3D95492C4CAA7A006857B3 /* Alamofire */; };
+		4D3D954F2C4CAA9E006857B3 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 4D3D954E2C4CAA9E006857B3 /* SwiftyJSON */; };
+		4D3D95512C4CB4FA006857B3 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3D95502C4CB4FA006857B3 /* APIManager.swift */; };
+		4D3D95532C4CB552006857B3 /* BadFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3D95522C4CB552006857B3 /* BadFirstViewController.swift */; };
+		4D3D95572C4CC3DE006857B3 /* ReflectHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3D95562C4CC3DE006857B3 /* ReflectHomeViewController.swift */; };
 		4D5096762C1ED7B100F5367B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5096752C1ED7B100F5367B /* AppDelegate.swift */; };
 		4D5096782C1ED7B100F5367B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5096772C1ED7B100F5367B /* SceneDelegate.swift */; };
-		4D50967A2C1ED7B100F5367B /* ReflectHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5096792C1ED7B100F5367B /* ReflectHomeViewController.swift */; };
 		4D50967D2C1ED7B100F5367B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4D50967C2C1ED7B100F5367B /* Base */; };
 		4D50967F2C1ED7B200F5367B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D50967E2C1ED7B200F5367B /* Assets.xcassets */; };
 		4D5096822C1ED7B200F5367B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4D5096812C1ED7B200F5367B /* Base */; };
 		4D601C0C2C27F76900BB3144 /* MemoryMoreDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D601C0B2C27F76900BB3144 /* MemoryMoreDetailViewController.swift */; };
+		4D7A7A9F2C4CCA9600BAB193 /* BadSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7A7A9E2C4CCA9600BAB193 /* BadSecondViewController.swift */; };
+		4D7A7AA12C4CCAB500BAB193 /* BadThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7A7AA02C4CCAB500BAB193 /* BadThirdViewController.swift */; };
+		4D7A7AA32C4CCAE600BAB193 /* GoodFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7A7AA22C4CCAE600BAB193 /* GoodFirstViewController.swift */; };
+		4D7A7AA52C4CCAEF00BAB193 /* GoodSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7A7AA42C4CCAEF00BAB193 /* GoodSecondViewController.swift */; };
+		4D7A7AA72C4CCAF900BAB193 /* GoodThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7A7AA62C4CCAF900BAB193 /* GoodThirdViewController.swift */; };
+		4D7A7AA92C4CCBAE00BAB193 /* SummarydetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7A7AA82C4CCBAE00BAB193 /* SummarydetailViewController.swift */; };
+		4D7A7AAB2C4CCD0000BAB193 /* SummaryLodingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7A7AAA2C4CCD0000BAB193 /* SummaryLodingViewController.swift */; };
 		4D7B7B852C279C25006B5751 /* RecordStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7B7B842C279C25006B5751 /* RecordStartViewController.swift */; };
 		4D7B7B882C279CDE006B5751 /* RecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7B7B872C279CDE006B5751 /* RecordingViewController.swift */; };
 		4D7B7B8A2C279D15006B5751 /* MemoryHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7B7B892C279D15006B5751 /* MemoryHomeViewController.swift */; };
@@ -46,15 +57,24 @@
 
 /* Begin PBXFileReference section */
 		4D3D95402C4CA5B7006857B3 /* RealmSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmSwift.swift; sourceTree = "<group>"; };
+		4D3D95502C4CB4FA006857B3 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		4D3D95522C4CB552006857B3 /* BadFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadFirstViewController.swift; sourceTree = "<group>"; };
+		4D3D95562C4CC3DE006857B3 /* ReflectHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectHomeViewController.swift; sourceTree = "<group>"; };
 		4D5096722C1ED7B100F5367B /* reflectColor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reflectColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D5096752C1ED7B100F5367B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D5096772C1ED7B100F5367B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4D5096792C1ED7B100F5367B /* ReflectHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectHomeViewController.swift; sourceTree = "<group>"; };
 		4D50967C2C1ED7B100F5367B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4D50967E2C1ED7B200F5367B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D5096812C1ED7B200F5367B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D5096832C1ED7B200F5367B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D601C0B2C27F76900BB3144 /* MemoryMoreDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryMoreDetailViewController.swift; sourceTree = "<group>"; };
+		4D7A7A9E2C4CCA9600BAB193 /* BadSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadSecondViewController.swift; sourceTree = "<group>"; };
+		4D7A7AA02C4CCAB500BAB193 /* BadThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadThirdViewController.swift; sourceTree = "<group>"; };
+		4D7A7AA22C4CCAE600BAB193 /* GoodFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodFirstViewController.swift; sourceTree = "<group>"; };
+		4D7A7AA42C4CCAEF00BAB193 /* GoodSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodSecondViewController.swift; sourceTree = "<group>"; };
+		4D7A7AA62C4CCAF900BAB193 /* GoodThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodThirdViewController.swift; sourceTree = "<group>"; };
+		4D7A7AA82C4CCBAE00BAB193 /* SummarydetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummarydetailViewController.swift; sourceTree = "<group>"; };
+		4D7A7AAA2C4CCD0000BAB193 /* SummaryLodingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryLodingViewController.swift; sourceTree = "<group>"; };
 		4D7B7B842C279C25006B5751 /* RecordStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordStartViewController.swift; sourceTree = "<group>"; };
 		4D7B7B872C279CDE006B5751 /* RecordingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingViewController.swift; sourceTree = "<group>"; };
 		4D7B7B892C279D15006B5751 /* MemoryHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryHomeViewController.swift; sourceTree = "<group>"; };
@@ -74,7 +94,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D3D954A2C4CAA7A006857B3 /* Alamofire in Frameworks */,
 				4D3D95432C4CA5DD006857B3 /* RealmSwift in Frameworks */,
+				4D3D954F2C4CAA9E006857B3 /* SwiftyJSON in Frameworks */,
 				4DBAD02A2C28206100B4FDF1 /* FSCalendar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,6 +129,7 @@
 				4D5096752C1ED7B100F5367B /* AppDelegate.swift */,
 				4D3D95402C4CA5B7006857B3 /* RealmSwift.swift */,
 				4D5096772C1ED7B100F5367B /* SceneDelegate.swift */,
+				4D3D95502C4CB4FA006857B3 /* APIManager.swift */,
 				4D7B7B862C279CA1006B5751 /* Reflect */,
 				4D7B7B8D2C279D3A006B5751 /* Memory */,
 				4D50967B2C1ED7B100F5367B /* Main.storyboard */,
@@ -120,10 +143,18 @@
 		4D7B7B862C279CA1006B5751 /* Reflect */ = {
 			isa = PBXGroup;
 			children = (
-				4D5096792C1ED7B100F5367B /* ReflectHomeViewController.swift */,
+				4D3D95562C4CC3DE006857B3 /* ReflectHomeViewController.swift */,
 				4D7B7B842C279C25006B5751 /* RecordStartViewController.swift */,
 				4D7B7B872C279CDE006B5751 /* RecordingViewController.swift */,
+				4D3D95522C4CB552006857B3 /* BadFirstViewController.swift */,
+				4D7A7A9E2C4CCA9600BAB193 /* BadSecondViewController.swift */,
+				4D7A7AA02C4CCAB500BAB193 /* BadThirdViewController.swift */,
+				4D7A7AA22C4CCAE600BAB193 /* GoodFirstViewController.swift */,
+				4D7A7AA42C4CCAEF00BAB193 /* GoodSecondViewController.swift */,
+				4D7A7AA62C4CCAF900BAB193 /* GoodThirdViewController.swift */,
 				4DFF978D2C27DD65000B3043 /* SummaryViewController.swift */,
+				4D7A7AA82C4CCBAE00BAB193 /* SummarydetailViewController.swift */,
+				4D7A7AAA2C4CCD0000BAB193 /* SummaryLodingViewController.swift */,
 			);
 			path = Reflect;
 			sourceTree = "<group>";
@@ -186,6 +217,8 @@
 			packageProductDependencies = (
 				4DBAD0292C28206100B4FDF1 /* FSCalendar */,
 				4D3D95422C4CA5DD006857B3 /* RealmSwift */,
+				4D3D95492C4CAA7A006857B3 /* Alamofire */,
+				4D3D954E2C4CAA9E006857B3 /* SwiftyJSON */,
 			);
 			productName = reflectColor;
 			productReference = 4D5096722C1ED7B100F5367B /* reflectColor.app */;
@@ -218,6 +251,8 @@
 			packageReferences = (
 				4DBAD0282C28206100B4FDF1 /* XCRemoteSwiftPackageReference "FSCalendar" */,
 				4D3D94BD2C48B58B006857B3 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				4D3D95482C4CAA7A006857B3 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				4D3D954D2C4CAA9E006857B3 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 			);
 			productRefGroup = 4D5096732C1ED7B100F5367B /* Products */;
 			projectDirPath = "";
@@ -248,18 +283,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D7A7AA12C4CCAB500BAB193 /* BadThirdViewController.swift in Sources */,
+				4D7A7AA92C4CCBAE00BAB193 /* SummarydetailViewController.swift in Sources */,
 				4DBBC5F82C27CCCF0048A8BE /* WaveAnimationView.swift in Sources */,
 				4DBAD02C2C28228300B4FDF1 /* HandDrawnCircleView.swift in Sources */,
-				4D50967A2C1ED7B100F5367B /* ReflectHomeViewController.swift in Sources */,
 				4D7B7B882C279CDE006B5751 /* RecordingViewController.swift in Sources */,
+				4D7A7AA32C4CCAE600BAB193 /* GoodFirstViewController.swift in Sources */,
 				4D3D95412C4CA5B7006857B3 /* RealmSwift.swift in Sources */,
 				4D601C0C2C27F76900BB3144 /* MemoryMoreDetailViewController.swift in Sources */,
 				4DBAD02E2C2823D000B4FDF1 /* HandDrawnCircleCell.swift in Sources */,
 				4D7B7B8C2C279D36006B5751 /* MemoryDetailViewController.swift in Sources */,
 				4D5096762C1ED7B100F5367B /* AppDelegate.swift in Sources */,
 				4D7B7B852C279C25006B5751 /* RecordStartViewController.swift in Sources */,
+				4D7A7AA72C4CCAF900BAB193 /* GoodThirdViewController.swift in Sources */,
 				4D7B7B8A2C279D15006B5751 /* MemoryHomeViewController.swift in Sources */,
+				4D7A7A9F2C4CCA9600BAB193 /* BadSecondViewController.swift in Sources */,
+				4D7A7AA52C4CCAEF00BAB193 /* GoodSecondViewController.swift in Sources */,
+				4D3D95532C4CB552006857B3 /* BadFirstViewController.swift in Sources */,
+				4D3D95512C4CB4FA006857B3 /* APIManager.swift in Sources */,
+				4D7A7AAB2C4CCD0000BAB193 /* SummaryLodingViewController.swift in Sources */,
 				4D5096782C1ED7B100F5367B /* SceneDelegate.swift in Sources */,
+				4D3D95572C4CC3DE006857B3 /* ReflectHomeViewController.swift in Sources */,
 				4DFF978E2C27DD65000B3043 /* SummaryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,6 +537,22 @@
 				kind = branch;
 			};
 		};
+		4D3D95482C4CAA7A006857B3 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+		4D3D954D2C4CAA9E006857B3 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.2;
+			};
+		};
 		4DBAD0282C28206100B4FDF1 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/WenchaoD/FSCalendar";
@@ -508,6 +568,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4D3D94BD2C48B58B006857B3 /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
+		};
+		4D3D95492C4CAA7A006857B3 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D3D95482C4CAA7A006857B3 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		4D3D954E2C4CAA9E006857B3 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D3D954D2C4CAA9E006857B3 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
 		};
 		4DBAD0292C28206100B4FDF1 /* FSCalendar */ = {
 			isa = XCSwiftPackageProductDependency;

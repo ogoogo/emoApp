@@ -8,13 +8,16 @@
 import UIKit
 //import WaveAnimationView
 
-class reflectHoneViewController: UIViewController {
+class ReflectHomeViewController: UIViewController {
+    
+    @IBOutlet var button: UIButton!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
 //        let wave = WaveAnimationView(frame: CGRect, color: UIColor)
-//        
+//
 //        wave.startAnimation()
         // Do any additional setup after loading the view.
     }

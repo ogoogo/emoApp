@@ -1,17 +1,16 @@
 //
-//  RecordStartViewController.swift
+//  BadFirstViewController.swift
 //  reflectColor
 //
-//  Created by 森杏菜 on 2024/06/23.
-//
+//  Created by 森杏菜 on 2024/07/21.
+//r
 
 import UIKit
 import Alamofire
 import AVFoundation
 import SwiftyJSON
 
-class RecordStartViewController: UIViewController, AVAudioRecorderDelegate{
-    
+class BadFirstViewController: UIViewController, AVAudioRecorderDelegate{
     var audioRecorder: AVAudioRecorder?
     var recordingURL: URL!
     var isRecording: Bool = false
