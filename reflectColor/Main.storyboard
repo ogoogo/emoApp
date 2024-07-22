@@ -79,14 +79,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEC-Pc-vtG">
-                                <rect key="frame" x="172" y="734" width="50" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ioN-s9-X49">
+                                <rect key="frame" x="139" y="668" width="114" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <color key="backgroundColor" red="0.098039215690000001" green="0.17254901959999999" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain"/>
+                                <buttonConfiguration key="configuration" style="gray" title="録音開始" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                    <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
                                 <connections>
-                                    <action selector="startRecording:" destination="tQs-3Y-FUr" eventType="touchUpInside" id="r3J-MN-BjK"/>
+                                    <action selector="startRecording:" destination="VEP-59-mLN" eventType="touchUpInside" id="0H8-YI-QXq"/>
+                                    <action selector="startRecording:" destination="tQs-3Y-FUr" eventType="touchUpInside" id="yba-La-gcC"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -103,7 +108,6 @@
                     <connections>
                         <outlet property="answerBackgound" destination="K9c-Gh-IqR" id="APa-A3-wyh"/>
                         <outlet property="nextButton" destination="9al-5h-GMW" id="AzA-hP-Wqr"/>
-                        <outlet property="recordButton" destination="CEC-Pc-vtG" id="scr-pw-IVZ"/>
                         <outletCollection property="eachBackgrounds" destination="lQj-ml-ebK" collectionClass="NSMutableArray" id="Rtz-WK-M2A"/>
                         <outletCollection property="eachBackgrounds" destination="K9c-Gh-IqR" collectionClass="NSMutableArray" id="L8N-dP-3Yg"/>
                     </connections>
@@ -1079,9 +1083,6 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

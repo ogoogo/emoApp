@@ -21,7 +21,6 @@ class RecordStartViewController: UIViewController, AVAudioRecorderDelegate{
     @IBOutlet var nextButton: UIBarButtonItem!
     @IBOutlet var eachBackgrounds: [UILabel]!
     @IBOutlet var answerBackgound: UILabel!
-    @IBOutlet weak var recordButton: UIButton!
     
     
     override func viewDidLoad() {
@@ -47,12 +46,6 @@ class RecordStartViewController: UIViewController, AVAudioRecorderDelegate{
             print("Failed to set audio session category and mode: \(error)")
             return
         }
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        recordButton.frame = CGRect(x:172,y:687,width:50,height:50)
-        recordButton.layer.cornerRadius = 25.0
-        recordButton.layer.masksToBounds = true
     }
     
     
@@ -87,23 +80,14 @@ class RecordStartViewController: UIViewController, AVAudioRecorderDelegate{
                 audioRecorder?.delegate = self
                 audioRecorder?.record()
                 print("Recording started")
-                UIView.animate(withDuration: 0.2) {
-                        self.recordButton.frame = CGRect(x:172,y:687,width:50,height:50)
-                        self.recordButton.layer.cornerRadius = 25
-                      }
             } catch {
                 print("Failed to start recording: \(error)")
             }
-            
         } else {
             //            録音停止する時
             audioRecorder?.stop()
             audioRecorder = nil
             print("Recording stopped")
-            UIView.animate(withDuration: 0.2) {
-                self.recordButton.frame = CGRect(x:172+10,y:687+10,width:30,height:30)
-                   self.recordButton.layer.cornerRadius = 3.0
-                 }
             //            このrequest()で下に書いてる関数読んで，API通信をしている！
             request()
             isRecording = false
@@ -144,4 +128,3 @@ class RecordStartViewController: UIViewController, AVAudioRecorderDelegate{
     
     
 }
-
