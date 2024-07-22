@@ -51,8 +51,8 @@ class RecordStartViewController: UIViewController, AVAudioRecorderDelegate{
     
     override func viewDidAppear(_ animated: Bool) {
         recordButton.frame = CGRect(x:172,y:687,width:50,height:50)
-        recordButton.layer.masksToBounds = true
         recordButton.layer.cornerRadius = 25.0
+        recordButton.layer.masksToBounds = true
     }
     
     
@@ -61,9 +61,9 @@ class RecordStartViewController: UIViewController, AVAudioRecorderDelegate{
             label.layer.cornerRadius = 10
             label.clipsToBounds = true
         }
-//        answerBackgound.layer.borderColor = UIColor(red: 25/255, green: 44/255, blue: 112/255, alpha: 1.0).cgColor
-//        answerBackgound.layer.borderWidth = 2.0
-//        answerBackgound.clipsToBounds = true
+        answerBackgound.layer.borderColor = UIColor(red: 25/255, green: 44/255, blue: 112/255, alpha: 1.0).cgColor
+        answerBackgound.layer.borderWidth = 2.0
+        answerBackgound.clipsToBounds = true
     }
     
     @IBAction func startRecording(_ sender: UIButton) {
@@ -87,6 +87,10 @@ class RecordStartViewController: UIViewController, AVAudioRecorderDelegate{
                 audioRecorder?.delegate = self
                 audioRecorder?.record()
                 print("Recording started")
+                UIView.animate(withDuration: 0.2) {
+                        self.recordButton.frame = CGRect(x:172,y:687,width:50,height:50)
+                        self.recordButton.layer.cornerRadius = 25
+                      }
             } catch {
                 print("Failed to start recording: \(error)")
             }
@@ -96,6 +100,10 @@ class RecordStartViewController: UIViewController, AVAudioRecorderDelegate{
             audioRecorder?.stop()
             audioRecorder = nil
             print("Recording stopped")
+            UIView.animate(withDuration: 0.2) {
+                self.recordButton.frame = CGRect(x:172+10,y:687+10,width:30,height:30)
+                   self.recordButton.layer.cornerRadius = 3.0
+                 }
             //            このrequest()で下に書いてる関数読んで，API通信をしている！
             request()
             isRecording = false

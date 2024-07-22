@@ -80,7 +80,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEC-Pc-vtG">
-                                <rect key="frame" x="172" y="687" width="50" height="50"/>
+                                <rect key="frame" x="172" y="734" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Button"/>
