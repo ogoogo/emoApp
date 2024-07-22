@@ -79,18 +79,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7y-aM-6iu">
-                                <rect key="frame" x="140" y="655" width="114" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEC-Pc-vtG">
+                                <rect key="frame" x="172" y="687" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.098039215690000001" green="0.17254901959999999" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="録音開始" cornerStyle="capsule">
-                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
-                                    <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
+                                <buttonConfiguration key="configuration" style="plain"/>
                                 <connections>
-                                    <action selector="startRecording:" destination="tQs-3Y-FUr" eventType="touchUpInside" id="OME-Nq-0Kr"/>
+                                    <action selector="startRecording:" destination="tQs-3Y-FUr" eventType="touchUpInside" id="r3J-MN-BjK"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -107,6 +103,7 @@
                     <connections>
                         <outlet property="answerBackgound" destination="K9c-Gh-IqR" id="APa-A3-wyh"/>
                         <outlet property="nextButton" destination="9al-5h-GMW" id="AzA-hP-Wqr"/>
+                        <outlet property="recordButton" destination="CEC-Pc-vtG" id="scr-pw-IVZ"/>
                         <outletCollection property="eachBackgrounds" destination="lQj-ml-ebK" collectionClass="NSMutableArray" id="Rtz-WK-M2A"/>
                         <outletCollection property="eachBackgrounds" destination="K9c-Gh-IqR" collectionClass="NSMutableArray" id="L8N-dP-3Yg"/>
                     </connections>
@@ -963,6 +960,17 @@
                                 <color key="textColor" red="0.098039215690000001" green="0.17254901959999999" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7y-aM-6iu">
+                                <rect key="frame" x="140" y="401" width="114" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.098039215690000001" green="0.17254901959999999" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="録音開始" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                    <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nyr-2r-XpZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1071,6 +1079,9 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
