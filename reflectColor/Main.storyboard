@@ -101,7 +101,7 @@
                     <navigationItem key="navigationItem" id="ZSN-2L-c75">
                         <barButtonItem key="rightBarButtonItem" title="次へ" id="9al-5h-GMW">
                             <connections>
-                                <segue destination="VEP-59-mLN" kind="show" id="PFW-Lr-Jiw"/>
+                                <segue destination="zkm-BL-8w6" kind="show" id="BY8-Ri-o2s"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -454,6 +454,21 @@
             </objects>
             <point key="canvasLocation" x="4925.9541984732823" y="3.5211267605633805"/>
         </scene>
+        <!--Wave View Controller-->
+        <scene sceneID="XPS-Qf-CAa">
+            <objects>
+                <viewController storyboardIdentifier="WaveViewController" id="xkd-du-QAz" customClass="WaveViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X1i-eE-CUW">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="0me-b9-81l"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7rt-sH-Y9G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1989" y="1373"/>
+        </scene>
         <!--Good First View Controller-->
         <scene sceneID="wyn-p5-4EC">
             <objects>
@@ -727,7 +742,7 @@
             <objects>
                 <viewController id="HQ2-r8-b3o" customClass="BadSecondViewController" customModule="reflectColor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0V4-L6-uZs">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D33-hP-Hvk">
@@ -804,7 +819,7 @@
             <objects>
                 <viewController id="0Zy-2X-xLk" customClass="BadThirdViewController" customModule="reflectColor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bz2-Sl-Uuk">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wi5-8q-cuX">

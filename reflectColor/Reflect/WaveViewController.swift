@@ -82,7 +82,7 @@ class WaveView: UIView {
     }
 }
 
-class ViewController: UIViewController {
+class WaveViewController: UIViewController {
     
     private var waveView: WaveView!
     
@@ -94,6 +94,6 @@ class ViewController: UIViewController {
         view.addSubview(waveView)
         
         // 色を変更する場合
-        waveView.waveColor = .red
+        waveView.waveColor = .gray
     }
 }

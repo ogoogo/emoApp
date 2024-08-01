@@ -10,7 +10,7 @@ import Alamofire
 import AVFoundation
 import SwiftyJSON
 
-class RecordStartViewController: UIViewController, AVAudioRecorderDelegate{
+class RecordStartViewController: UIViewController, AVAudioRecorderDelegate {
     
     var audioRecorder: AVAudioRecorder?
     var recordingURL: URL!
@@ -22,13 +22,10 @@ class RecordStartViewController: UIViewController, AVAudioRecorderDelegate{
     @IBOutlet var eachBackgrounds: [UILabel]!
     @IBOutlet var answerBackgound: UILabel!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        //        例えば
         nextButton.isHidden = false
         setupBackgrounds()
-        
         
         AVAudioSession.sharedInstance().requestRecordPermission { granted in
             if granted {
@@ -48,7 +45,6 @@ class RecordStartViewController: UIViewController, AVAudioRecorderDelegate{
         }
     }
     
-    
     func setupBackgrounds() {
         eachBackgrounds.forEach { label in
             label.layer.cornerRadius = 10
@@ -61,7 +57,7 @@ class RecordStartViewController: UIViewController, AVAudioRecorderDelegate{
     
     @IBAction func startRecording(_ sender: UIButton) {
         if !isRecording {
-            //            スタートする時
+            // スタートする時
             isRecording = true
             let audioFilename = getDocumentsDirectory().appendingPathComponent("recording2.raw")
             recordingURL = audioFilename
@@ -84,11 +80,10 @@ class RecordStartViewController: UIViewController, AVAudioRecorderDelegate{
                 print("Failed to start recording: \(error)")
             }
         } else {
-            //            録音停止する時
+            // 録音停止する時
             audioRecorder?.stop()
             audioRecorder = nil
             print("Recording stopped")
-            //            このrequest()で下に書いてる関数読んで，API通信をしている！
             request()
             isRecording = false
         }
@@ -98,20 +93,30 @@ class RecordStartViewController: UIViewController, AVAudioRecorderDelegate{
         APIManager.shared.request(audioURL: recordingURL) { happiness, disgust, neutral, sadness, anger, text in
             if let happiness = happiness, let disgust = disgust, let neutral = neutral, let sadness = sadness, let anger = anger, let text = text {
                 
-                //                    この辺で感情の値を取り出せる！好きに使ってね！
+                // この辺で感情の値を取り出せる！好きに使ってね！
                 print("Happiness: \(happiness)")
                 print("Disgust: \(disgust)")
                 print("Neutral: \(neutral)")
                 print("Sadness: \(sadness)")
                 print("Anger: \(anger)")
-                //                    textも出せる！
+        
                 print("Text: \(text)")
+                
+               
+                let maxEmotionValue = max(happiness, disgust, neutral, sadness, anger)
+                
+                
+                if maxEmotionValue == neutral {
+                    DispatchQueue.main.async {
+                        self.presentWaveViewController()
+                    }
+                }
+                
                 DispatchQueue.main.async {
-                    //                        例えば取り出せた文章を出せるよね
+                    // 例えば取り出せた文章を出せるよね
                     self.answerBackgound.text = text
-                    //                        例えばここで次へボタン復活させたら次画面いける
+                    // 例えばここで次へボタン復活させたら次画面いける
                     self.nextButton.isHidden = false
-                    
                 }
             } else {
                 print("Failed to retrieve emotion or text")
@@ -119,12 +124,16 @@ class RecordStartViewController: UIViewController, AVAudioRecorderDelegate{
         }
     }
     
+    func presentWaveViewController() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let waveVC = storyboard.instantiateViewController(withIdentifier: "WaveViewController") as? WaveViewController {
+            self.present(waveVC, animated: true, completion: nil)
+        }
+    }
+    
     func getDocumentsDirectory() -> URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         return paths[0]
     }
-    
-    
-    
-    
 }
+
