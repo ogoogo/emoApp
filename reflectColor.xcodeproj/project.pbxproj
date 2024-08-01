@@ -15,6 +15,7 @@
 		4D3D95512C4CB4FA006857B3 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3D95502C4CB4FA006857B3 /* APIManager.swift */; };
 		4D3D95532C4CB552006857B3 /* BadFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3D95522C4CB552006857B3 /* BadFirstViewController.swift */; };
 		4D3D95572C4CC3DE006857B3 /* ReflectHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3D95562C4CC3DE006857B3 /* ReflectHomeViewController.swift */; };
+		4D4087302C5B9C5A00D6EC18 /* WaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D40872F2C5B9C5A00D6EC18 /* WaveViewController.swift */; };
 		4D5096762C1ED7B100F5367B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5096752C1ED7B100F5367B /* AppDelegate.swift */; };
 		4D5096782C1ED7B100F5367B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5096772C1ED7B100F5367B /* SceneDelegate.swift */; };
 		4D50967F2C1ED7B200F5367B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D50967E2C1ED7B200F5367B /* Assets.xcassets */; };
@@ -59,6 +60,7 @@
 		4D3D95502C4CB4FA006857B3 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		4D3D95522C4CB552006857B3 /* BadFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadFirstViewController.swift; sourceTree = "<group>"; };
 		4D3D95562C4CC3DE006857B3 /* ReflectHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectHomeViewController.swift; sourceTree = "<group>"; };
+		4D40872F2C5B9C5A00D6EC18 /* WaveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveViewController.swift; sourceTree = "<group>"; };
 		4D5096722C1ED7B100F5367B /* reflectColor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reflectColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D5096752C1ED7B100F5367B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D5096772C1ED7B100F5367B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				4D7B7B872C279CDE006B5751 /* RecordingViewController.swift */,
 				4D3D95522C4CB552006857B3 /* BadFirstViewController.swift */,
 				4D7A7A9E2C4CCA9600BAB193 /* BadSecondViewController.swift */,
+				4D40872F2C5B9C5A00D6EC18 /* WaveViewController.swift */,
 				4D7A7AA02C4CCAB500BAB193 /* BadThirdViewController.swift */,
 				4D7A7AA22C4CCAE600BAB193 /* GoodFirstViewController.swift */,
 				4D7A7AA42C4CCAEF00BAB193 /* GoodSecondViewController.swift */,
@@ -285,6 +288,7 @@
 				4DBBC5F82C27CCCF0048A8BE /* WaveAnimationView.swift in Sources */,
 				4DBAD02C2C28228300B4FDF1 /* HandDrawnCircleView.swift in Sources */,
 				4D7B7B882C279CDE006B5751 /* RecordingViewController.swift in Sources */,
+				4D4087302C5B9C5A00D6EC18 /* WaveViewController.swift in Sources */,
 				4D7A7AA32C4CCAE600BAB193 /* GoodFirstViewController.swift in Sources */,
 				4D3D95412C4CA5B7006857B3 /* RealmSwift.swift in Sources */,
 				4D601C0C2C27F76900BB3144 /* MemoryMoreDetailViewController.swift in Sources */,
