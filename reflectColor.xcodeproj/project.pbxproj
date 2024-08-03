@@ -37,7 +37,6 @@
 		4DBAD02E2C2823D000B4FDF1 /* HandDrawnCircleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBAD02D2C2823D000B4FDF1 /* HandDrawnCircleCell.swift */; };
 		4DBBC5F82C27CCCF0048A8BE /* WaveAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBBC5F52C27CCCF0048A8BE /* WaveAnimationView.swift */; };
 		4DBBC5FF2C27D8C70048A8BE /* SF-Pro-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4DBBC5FD2C27D8C70048A8BE /* SF-Pro-Italic.ttf */; };
-		4DBBC6002C27D8C70048A8BE /* SF-Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4DBBC5FE2C27D8C70048A8BE /* SF-Pro.ttf */; };
 		4DFF978E2C27DD65000B3043 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFF978D2C27DD65000B3043 /* SummaryViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -268,7 +267,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DBBC6002C27D8C70048A8BE /* SF-Pro.ttf in Resources */,
 				4D50967F2C1ED7B200F5367B /* Assets.xcassets in Resources */,
 				4D5096822C1ED7B200F5367B /* Base in Resources */,
 				4D7A7AAD2C4CDA1500BAB193 /* Main.storyboard in Resources */,

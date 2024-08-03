@@ -94,7 +94,7 @@ class BadSecondViewController: UIViewController, AVAudioRecorderDelegate{
             }
         
             func request() {
-                    APIManager.shared.request(audioURL: recordingURL) { happiness, disgust, neutral, sadness, anger, text in
+                APIManager.shared.request(audioURL: recordingURL, flag: 0) { happiness, disgust, neutral, sadness, anger, text, chatGPTresponse in
                         if let happiness = happiness, let disgust = disgust, let neutral = neutral, let sadness = sadness, let anger = anger, let text = text {
         
         //                    この辺で感情の値を取り出せる！好きに使ってね！
